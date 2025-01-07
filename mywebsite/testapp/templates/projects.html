@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content1 %}
+<div class="col-12 text-center mt-3">
+        <div class="col-12 d-flex justify-content-center align-items-center">
+            <a href="https://github.com/Sridharakula083" target="_blank" class="ms-3">
+                <img src="{% static 'images/github.png' %}" alt="images/github.png" width="50" height="50" class="sociallink">
+            </a>
+        </div>
+</div>
+<div class="row my-2">
+    {% for project in projects_show %}
+<div class="col-6">
+    <h4 class="text-light">{{project.title}}</h4>
+    <a href="https://github.com/Sridharakula083?tab=repositories"><img src="{% static project.path %}" width="500" height="800" class="img-fluid"></a>
+</div>
+    {% endfor %}
+</div>
+{% endblock content1 %}

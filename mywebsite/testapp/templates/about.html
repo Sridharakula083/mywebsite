@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content1 %}
+<div class="row my-5">
+    <div class="col-4 d-flex justify-content-center align-items-center">
+        <img src="{% static 'images/myphoto.jpg' %}" alt="Image" class="about_image">
+    </div>
+    <div class="col-7 text-left text-light">
+        <h2>Hello !</h2>
+        <p class="fs-5">
+            Looking for a position through which I can utilize my skills.
+            And abilities in the Industry that offers professional growth while being resourceful and innovative
+        </p>
+        <p class="fs-5">
+            As a python developer I have a good knowledge in:<br>
+               -Numpy, Pandas, Matplotlib, Seaborn<br>
+               -Exploratory Data Analysis<br>
+               -Django with RestAPI<br>
+               -HTML and CSS<br>
+               -Basics of Machine Learning<br>
+               -MySQL<br>
+        </p>
+
+    </div>
+</div>
+<div class="row my-2">
+    <h2 class="text-center" style="color:rgb(175,245,200)">My Tech Stack</h2>
+        <div class="d-flex justify-content-around align-items-center">
+            <img src="{% static 'images/python.jpg' %}" alt="python" width="70" height="70" class="img-fluid">
+
+            <img src="{% static 'images/django.jpg' %}" alt="django" width="70" height="70" class="img-fluid">
+
+            <img src="{% static 'images/mysql.jpg' %}" alt="mysql" width="70" height="70" class="img-fluid">
+
+            <img src="{% static 'images/html.jpg' %}" alt="html" width="70" height="70" class="img-fluid">
+
+            <img src="{% static 'images/css.jpg' %}" alt="css" width="70" height="70" class="img-fluid">
+        </div>
+</div>
+
+{% endblock content1 %}
